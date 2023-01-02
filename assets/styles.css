@@ -1,0 +1,36 @@
+:root {
+  /* FONT VARIABLES */
+
+  --font-shrikhand: "Shrikhand", cursive;
+  --font-roboto: "Roboto", sans-serif;
+  --font-light: 300;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* COLOR VARIABLES */
+
+  --color-background: hsl(0, 0%, 97%);
+  --color-background-light: hsl(0, 0%, 100%);
+
+  /* SMALL BUTTON HOVER AND "NEW" BUTTON BG */
+  --color-mint-green: hsl(165, 56%, 74%);
+
+  /* ROUND NUMBER BUTTON BG*/
+  --color-purple: hsl(267, 66%, 60%);
+
+  --color-gradient-purple: linear-gradient(
+    200.64deg,
+    hsl(267, 66%, 60%) -5.2%,
+    hsl(317, 100%, 74%) 110.74%
+  );
+
+  --color-text-main: hsl(0, 0%, 0%);
+  --color-text-green: hsl(165, 100%, 26%);
+
+  /* FOOTER TEXT AND BG COLORS */
+  --color-text-second: hsl(0, 0%, 100%);
+  --color-footer-grey: hsl(0, 0%, 21%);
+
+  /* BOX SHADOW */
+  --shadow-buttonshadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
