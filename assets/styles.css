@@ -33,4 +33,17 @@
 
   /* BOX SHADOW */
   --shadow-buttonshadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-buttonshadow-hover: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.restaurant__card {
+  position: relative;
+}
+
+.restaurant__card--clickable {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
