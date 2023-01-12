@@ -11,6 +11,7 @@
 
   --color-background: hsl(0, 0%, 97%);
   --color-background-light: hsl(0, 0%, 100%);
+  --color-background-dark: hsl(0, 0%, 92%);
 
   /* SMALL BUTTON HOVER AND "NEW" BUTTON BG */
   --color-mint-green: hsl(165, 56%, 74%);
@@ -18,11 +19,12 @@
   /* ROUND NUMBER BUTTON BG*/
   --color-purple: hsl(267, 66%, 60%);
 
-  --color-gradient-purple: linear-gradient(
-    200.64deg,
-    hsl(267, 66%, 60%) -5.2%,
-    hsl(317, 100%, 74%) 110.74%
-  );
+  --color-gradient-purple: lin
+    ear-gradient(
+      200.64deg,
+      hsl(267, 66%, 60%) -5.2%,
+      hsl(317, 100%, 74%) 110.74%
+    );
 
   --color-text-main: hsl(0, 0%, 0%);
   --color-text-green: hsl(165, 100%, 26%);
@@ -34,6 +36,35 @@
   /* BOX SHADOW */
   --shadow-buttonshadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   --shadow-buttonshadow-hover: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  --shadow-badge: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-roboto);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__iconcontainer {
+  background-color: var(--color-background-light);
+  box-shadow: var(--shadow-badge);
+  padding: 0.9rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__icon {
+  width: 40%;
+}
+
+.header__locationcontainer {
+  background-color: var(--color-background-dark);
 }
 
 .restaurant__card {
