@@ -36,7 +36,6 @@
   /* BOX SHADOW */
   --shadow-buttonshadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   --shadow-buttonshadow-hover: 0px 4px 15px rgba(0, 0, 0, 0.5);
-  --shadow-badge: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -52,8 +51,11 @@ header {
 }
 
 .header__iconcontainer {
+  position: relative;
+  z-index: 10;
   background-color: var(--color-background-light);
-  box-shadow: var(--shadow-badge);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  height:fit-content;
   padding: 0.9rem 0;
   display: flex;
   justify-content: center;
@@ -64,7 +66,18 @@ header {
 }
 
 .header__locationcontainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-background-dark);
+  height:50px;
+  color:var(--color-footer-grey);
+}
+
+.headerlocationcontainer__icon{
+  width:12px;
+  height:16px;
+ margin-right:10px;
 }
 
 .restaurant__card {
@@ -78,3 +91,43 @@ header {
   left: 0;
   width: 100%;
 }
+
+.header__title{
+  text-align: center;
+  padding:0rem 2.8rem 1.5rem 2.8rem;
+  margin:0;
+}
+
+.header__explorecontainer{
+  background-color: var(--color-background);
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  display:flex;
+  align-items:center ;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding:3rem 0
+}
+
+.header__text{
+text-align: center;
+font-weight: var(--font-light);
+padding: 0rem 1.8rem 1.5rem 1.8rem;
+margin: 0;
+}
+
+.header__button{
+  width:50%;
+  padding:1.1rem 0.2rem;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: var(--font-light);
+  text-decoration: none;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  margin: 1rem 0 1rem 0;
+    
+}
+
