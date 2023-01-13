@@ -307,3 +307,18 @@ header {
 .restaurantcard__text {
   padding-left: 1rem;
 }
+
+.restaurant__icontextcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant__textcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.restaurant__hearticon {
+  height: 26px;
+}
