@@ -19,12 +19,11 @@
   /* ROUND NUMBER BUTTON BG*/
   --color-purple: hsl(267, 66%, 60%);
 
-  --color-gradient-purple: lin
-    ear-gradient(
-      200.64deg,
-      hsl(267, 66%, 60%) -5.2%,
-      hsl(317, 100%, 74%) 110.74%
-    );
+  --color-gradient-purple: linear-gradient(
+    200.64deg,
+    hsl(267, 66%, 60%) -5.2%,
+    hsl(317, 100%, 74%) 110.74%
+  );
 
   --color-text-main: hsl(0, 0%, 0%);
   --color-text-green: hsl(165, 100%, 26%);
@@ -146,12 +145,17 @@ header {
   color: white;
   text-align: center;
   font-size: 16px;
-  font-weight: var(--font-light);
+  font-weight: var(--font-medium);
   text-decoration: none;
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 28px;
   margin: 1rem 0 1rem 0;
+  transition: all 1.5s ease-in-out 100ms;
+}
+
+.header__button:hover {
+  filter: brightness(130%);
 }
 
 /* FUNCTIONING STYLING */
@@ -319,6 +323,65 @@ header {
   width: 85%;
 }
 
-.restaurant__hearticon {
-  height: 26px;
+/*STYLING OF ANIMATED HEART*/
+
+.restaurantcard__heart {
+  position: relative;
+  z-index: 2;
+  top: -1rem;
+  background: transparent;
+}
+
+.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.fa-regular:hover {
+  color: transparent;
+}
+
+.fa-solid {
+  color: transparent;
+  transition: all 1s ease-in-out 100ms;
+}
+
+.fa-solid:hover {
+  color: hsl(267, 66%, 60%);
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: var(--color-footer-grey);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+footer a:visited,
+footer a:active,
+footer a {
+  color: white;
+  font-weight: var(--font-medium);
+  text-decoration: none;
+}
+
+.footer__icon {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.footer__icon--smallone {
+  width: 4%;
+  padding-right: 0.6rem;
+}
+.footer__icon--smalltwo {
+  width: 5%;
+  padding-right: 0.4rem;
 }

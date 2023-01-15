@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/7dd836b7eb.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/styles.css" />
 
     <title>Ohmyfood</title>
@@ -28,7 +32,7 @@
     <header>
       <section class="header__iconcontainer">
         <img
-          src="./assets/images/logo/ohmyfood@2x.svg"
+          src="assets/images/logo/ohmyfoodblack.svg"
           alt="icône ohmyfood"
           class="header__icon"
         />
@@ -98,11 +102,10 @@
               <h3 class="restaurantcard__title">La palette du goût</h3>
               <p class="restaurantcard__text">Ménilmontant</p>
             </div>
-            <img
-              src="assets/images/icones/heart-regular.svg"
-              alt=""
-              class="restaurant__hearticon"
-            />
+            <div class="restaurantcard__heart">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
         </article>
 
@@ -121,11 +124,10 @@
               <h3 class="restaurantcard__title">La note enchantée</h3>
               <p class="restaurantcard__text">Charonne</p>
             </div>
-            <img
-              src="assets/images/icones/heart-regular.svg"
-              alt=""
-              class="restaurant__hearticon"
-            />
+            <div class="restaurantcard__heart">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
         </article>
 
@@ -141,11 +143,10 @@
               <h3 class="restaurantcard__title">À la française</h3>
               <p class="restaurantcard__text">Cité Rouge</p>
             </div>
-            <img
-              src="assets/images/icones/heart-regular.svg"
-              alt=""
-              class="restaurant__hearticon"
-            />
+            <div class="restaurantcard__heart">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
         </article>
 
@@ -161,21 +162,34 @@
               <h3 class="restaurantcard__title">Le délice des sens</h3>
               <p class="restaurantcard__text">Folie-Méricourt</p>
             </div>
-            <img
-              src="assets/images/icones/heart-regular.svg"
-              alt=""
-              class="restaurant__hearticon"
-            />
+            <div class="restaurantcard__heart">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </div>
         </article>
       </div>
     </main>
     <footer>
-      <img src="" alt="" class="footer__icon" />
-      <a href="">Proposer un restaurant</a>
-      <img src="" alt="" class="footer__icon--small" />
-      <a href="">Devenir partenaire</a>
-      <img src="" alt="" class="footer__icon--small" />
+      <img
+        src="assets/images/logo/ohmyfood@2x.svg"
+        alt=""
+        class="footer__icon"
+      />
+      <section class="footer__texticonwrapper">
+        <img
+          src="assets/images/icones/utensils-solid.svg"
+          alt=""
+          class="footer__icon--smallone"
+        /><a href="">Proposer un restaurant</a>
+      </section>
+      <section class="footer__texticonwrapper">
+        <img
+          src="assets/images/icones/handshake-angle-solid.svg"
+          alt=""
+          class="footer__icon--smalltwo"
+        /><a href="">Devenir partenaire</a>
+      </section>
       <a href="">Mentions légales</a>
       <a href="">Contact</a>
     </footer>
