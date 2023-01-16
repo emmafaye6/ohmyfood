@@ -158,7 +158,8 @@ header {
   transition: all 1.5s ease-in-out 100ms;
 }
 
-.header__button:hover {
+.header__button:hover,
+.header__button:active {
   filter: brightness(130%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
 }
@@ -203,7 +204,8 @@ header {
   line-height: 19px;
 }
 
-.functioning__container:hover {
+.functioning__container:hover,
+.functioning__container:active {
   background-color: #f5edff;
 }
 
@@ -214,7 +216,8 @@ header {
     contrast(93%);
 }
 
-li:hover img {
+li:hover img,
+li:active img {
   filter: invert(43%) sepia(51%) saturate(961%) hue-rotate(228deg)
     brightness(88%) contrast(96%);
 }
@@ -347,7 +350,8 @@ li:hover img {
   position: absolute;
 }
 
-.fa-regular:hover {
+.fa-regular:hover,
+.fa-regular:active {
   color: transparent;
 }
 
@@ -366,7 +370,8 @@ li:hover img {
   );
 }
 
-.fa-solid:hover {
+.fa-solid:hover,
+.fa-solid:active {
   opacity: 1;
   transform: scale(1.1);
   transform-origin: center;
