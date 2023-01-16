@@ -343,11 +343,21 @@ header {
 
 .fa-solid {
   color: transparent;
-  transition: all 1s ease-in-out 100ms;
+  transition: all 3s ease-in-out 200ms;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  background-image: linear-gradient(
+    to top,
+    rgb(147, 86, 220),
+    rgb(255, 121, 218)
+  );
 }
 
 .fa-solid:hover {
-  color: hsl(267, 66%, 60%);
+  opacity: 1;
   transform: scale(1.1);
   transform-origin: center;
 }
