@@ -75,6 +75,8 @@ body {
   font-family: var(--font-roboto);
 }
 
+/* PRELOADER STYLING */
+
 /* HEADER STYLING */
 
 header {
@@ -96,6 +98,7 @@ header {
 
 .header__icon {
   width: 40%;
+  max-width: 12.5rem;
 }
 
 .header__locationcontainer {
@@ -141,6 +144,7 @@ header {
 
 .header__button {
   width: 50%;
+  max-width: 13.6rem;
   padding: 1.1rem 0.2rem;
   color: white;
   text-align: center;
@@ -156,6 +160,7 @@ header {
 
 .header__button:hover {
   filter: brightness(130%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* FUNCTIONING STYLING */
@@ -209,9 +214,7 @@ header {
     contrast(93%);
 }
 
-.functioning__icon--one:hover,
-.functioning__icon--two:hover,
-.functioning__icon--three:hover {
+li:hover img {
   filter: invert(43%) sepia(51%) saturate(961%) hue-rotate(228deg)
     brightness(88%) contrast(96%);
 }
@@ -298,6 +301,13 @@ header {
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 0;
+}
+
+.restaurantcard__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restaurantcard__text {
@@ -394,4 +404,79 @@ footer a {
 .footer__icon--smalltwo {
   width: 5%;
   padding-right: 0.4rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  .functioning {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .functioning__title {
+    margin-bottom: 2rem;
+  }
+
+  .functioning ol {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .functioning__container {
+    max-width: 20.1rem;
+  }
+
+  .restaurant__card {
+    flex: 0 0 auto;
+    width: 30rem;
+    margin: 0 2rem 2rem 1rem;
+  }
+
+  .restaurants {
+    width: 100%;
+  }
+
+  .restaurantcard__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex-direction: row;
+    padding-bottom: 1rem;
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  footer a {
+    margin-right: 2rem;
+  }
+
+  .footer__icon {
+    width: 10%;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .footer__container {
+    display: flex;
+    width: fit-content;
+  }
+
+  .footer__texticonwrapper {
+    height: fit-content;
+    max-width: 14rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footer__icon--smallone {
+    width: 5%;
+  }
+  .footer__icon--smalltwo {
+    width: 6%;
+  }
 }
