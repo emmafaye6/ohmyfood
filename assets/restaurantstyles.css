@@ -16,3 +16,8 @@
 .header__icon {
   margin: 0 auto;
 }
+
+.herobanner {
+  width: 100%;
+  object-fit: cover;
+}
