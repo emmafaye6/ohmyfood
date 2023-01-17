@@ -47,6 +47,15 @@ ol {
   counter-reset: mycounter 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style: none;
+}
+
 ol li {
   position: relative;
 }
@@ -216,8 +225,8 @@ header {
     contrast(93%);
 }
 
-li:hover img,
-li:active img {
+.functioning li:hover img,
+.functioning li:active img {
   filter: invert(43%) sepia(51%) saturate(961%) hue-rotate(228deg)
     brightness(88%) contrast(96%);
 }
@@ -472,16 +481,18 @@ footer a {
   }
 
   .footer__texticonwrapper {
+    display: flex;
     height: fit-content;
     max-width: 14rem;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 
   .footer__icon--smallone {
-    width: 5%;
+    width: 7%;
   }
   .footer__icon--smalltwo {
-    width: 6%;
+    width: 8%;
   }
 }
