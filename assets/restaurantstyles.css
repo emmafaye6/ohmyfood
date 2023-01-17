@@ -1,0 +1,18 @@
+.header--restaurants {
+  background-color: var(--color-background-light);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header__arrow {
+  width: 17px;
+}
+
+.header__arrowlink {
+  text-decoration: none;
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.header__icon {
+  margin: 0 auto;
+}

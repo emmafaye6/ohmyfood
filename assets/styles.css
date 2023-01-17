@@ -106,7 +106,7 @@ header {
 }
 
 .header__icon {
-  width: 40%;
+  width: 70%;
   max-width: 12.5rem;
 }
 
@@ -493,6 +493,6 @@ footer a {
     width: 7%;
   }
   .footer__icon--smalltwo {
-    width: 8%;
+    width: 9%;
   }
 }
