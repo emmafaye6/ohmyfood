@@ -1,3 +1,42 @@
+:root {
+  /* FONT VARIABLES */
+
+  --font-shrikhand: "Shrikhand", cursive;
+  --font-roboto: "Roboto", sans-serif;
+  --font-light: 300;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* COLOR VARIABLES */
+
+  --color-background: hsl(0, 0%, 97%);
+  --color-background-light: hsl(0, 0%, 100%);
+  --color-background-dark: hsl(0, 0%, 92%);
+
+  /* SMALL BUTTON HOVER AND "NEW" BUTTON BG */
+  --color-mint-green: hsl(165, 56%, 74%);
+
+  /* ROUND NUMBER BUTTON BG*/
+  --color-purple: hsl(267, 66%, 60%);
+
+  --color-gradient-purple: linear-gradient(
+    200.64deg,
+    hsl(267, 66%, 60%) -5.2%,
+    hsl(317, 100%, 74%) 110.74%
+  );
+
+  --color-text-main: hsl(0, 0%, 0%);
+  --color-text-green: hsl(165, 100%, 26%);
+
+  /* FOOTER TEXT AND BG COLORS */
+  --color-text-second: hsl(0, 0%, 100%);
+  --color-footer-grey: hsl(0, 0%, 21%);
+
+  /* BOX SHADOW */
+  --shadow-buttonshadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-buttonshadow-hover: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
 .header--restaurants {
   background-color: var(--color-background-light);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -20,4 +59,72 @@
 .herobanner {
   width: 100%;
   object-fit: cover;
+  position: relative;
+}
+
+/* MAIN CONTAINER STYLING */
+
+.restaurantpage__wrapper {
+  background-color: var(--color-background-dark);
+  padding: 2rem 1rem;
+  border-radius: 40px 40px 0 0;
+}
+.restaurantpage__title {
+  margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.restaurantpage__coursetitle {
+  width: 2.8rem;
+  font-family: var(--font-roboto);
+  padding-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #99e2d0;
+}
+
+/* RESTAURANT CARDS STYLING */
+
+.restaurantpage__cardwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.restaurantpage__card {
+  display: flex;
+  width: 92%;
+  background-color: var(--color-background);
+  height: 68.07px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.restaurantpage__cardtitle {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.restaurantpage__cardtext {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
