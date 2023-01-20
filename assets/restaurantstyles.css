@@ -112,14 +112,13 @@
 
 .restaurantpage__card {
   display: flex;
-  justify-content: space-between;
-  width: 92%;
+  width: 95%;
   background-color: var(--color-background);
   height: 68.07px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  border-radius: 15.0431px;
+  border-radius: 15px;
   align-items: center;
-  padding-inline: 1rem;
+  padding-left: 1rem;
 }
 
 .restaurantpage__cardtitle {
@@ -162,4 +161,50 @@
 .restaurantpage__button:active {
   filter: brightness(130%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.restaurantpage_cardprice {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.restaurantpage__circlecheckcontainer {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  background-color: var(--color-mint-green);
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  opacity: 0;
+}
+
+.restaurantpage__circlecheck {
+  width: 20px;
+}
+
+.animatebloc--one,
+.animatebloc--two,
+animatebloc--three {
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
+}
+
+.animatebloc--one {
+  animation-delay: 0.5s;
+}
+.animatebloc--two {
+  animation-delay: 0.7s;
+}
+.animatebloc--three {
+  animation-delay: 0.9s;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
