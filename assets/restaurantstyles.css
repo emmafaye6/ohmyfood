@@ -60,15 +60,21 @@
   width: 100%;
   object-fit: cover;
   position: relative;
+  height: 24rem;
 }
 
 /* MAIN CONTAINER STYLING */
 
 .restaurantpage__wrapper {
-  background-color: var(--color-background-dark);
-  padding: 2rem 1rem;
-  border-radius: 40px 40px 0 0;
+  background-color: var(--color-background);
+  padding: 0 1rem 3rem 1rem;
 }
+
+.restaurantpage__titlecontainer {
+  margin-top: -3rem;
+  position: relative;
+}
+
 .restaurantpage__title {
   margin: 0;
   font-family: "Shrikhand", cursive;
@@ -78,11 +84,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-bottom: 2rem;
+  padding: 2.5rem 0 0 0;
+  background-color: var(--color-background);
+  border-radius: 40px 40px 0 0;
 }
 
 .restaurantpage__coursetitle {
   width: 2.8rem;
+  margin-top: 2rem;
   font-family: var(--font-roboto);
   padding-bottom: 0.5rem;
   font-style: normal;
@@ -103,7 +112,6 @@
 
 .restaurantpage__card {
   display: flex;
-
   justify-content: space-between;
   width: 92%;
   background-color: var(--color-background);
@@ -129,4 +137,29 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
+}
+
+.restaurantpage__button {
+  width: 80%;
+  max-width: 13.6rem;
+  padding: 1.1rem 0.2rem;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  transition: all 1.5s ease-in-out 100ms;
+}
+
+.restaurantpage__button:hover,
+.restaurantpage__button:active {
+  filter: brightness(130%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
 }

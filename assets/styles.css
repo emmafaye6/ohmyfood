@@ -408,7 +408,7 @@ footer a {
 
 .footer__icon {
   width: 30%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer__icon--smallone {
@@ -464,6 +464,7 @@ footer a {
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin: 0;
+    padding: 2rem 0;
   }
 
   footer a {
