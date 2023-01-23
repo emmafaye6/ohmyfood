@@ -441,7 +441,6 @@ header {
   z-index: 2;
   top: -0.8rem;
   background: transparent;
-  margin-left: 1rem;
 }
 
 .fa-heart {
@@ -454,7 +453,7 @@ header {
   color: transparent;
 }
 
-.fa-solid {
+.restaurantcard__heart .fa-solid {
   color: transparent;
   transition: all 3s ease-in-out 200ms;
   color: transparent;
@@ -469,8 +468,8 @@ header {
   );
 }
 
-.fa-solid:hover,
-.fa-solid:active {
+.restaurantcard__heart .fa-solid:hover,
+.restaurantcard__heart .fa-solid:active {
   opacity: 1;
   transform: scale(1.1);
   transform-origin: center;
@@ -536,6 +535,10 @@ footer a {
     flex: 0 0 auto;
     width: 30rem;
     margin: 0 2rem 2rem 1rem;
+  }
+
+  .restaurantcard__heart {
+    margin-left: 1rem;
   }
 
   .restaurants {

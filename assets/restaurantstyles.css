@@ -125,16 +125,32 @@
   font-size: 18px;
   margin: 0;
   padding-bottom: 0.2rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .restaurantpage__cardtext {
-  display: flex;
-  flex-direction: column;
+  display: block;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   margin: 0;
   padding: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.restaurantpage__textwrapper {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin-right: 0.7rem;
 }
 
 .restaurantpage__button {
@@ -164,21 +180,30 @@
 
 .restaurantpage_cardprice {
   margin-left: auto;
-  margin-right: 1rem;
 }
 
-.restaurantpage__circlecheckcontainer {
-  display: flex;
-  justify-content: center;
-  width: 20%;
-  background-color: var(--color-mint-green);
+.restaurantpage__check {
   height: 100%;
-  border-radius: 0 15px 15px 0;
-  opacity: 0;
+  width: 5%;
+  color: transparent;
+  transition: all 1s ease-in-out;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.restaurantpage__circlecheck {
-  width: 20px;
+.restaurantpage__check:hover {
+  background-color: var(--color-mint-green);
+  border-radius: 0px 15px 15px 0;
+  height: 100%;
+  margin-left: 0.5rem;
+  padding: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .animatebloc--one,
