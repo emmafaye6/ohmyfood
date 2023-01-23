@@ -209,7 +209,7 @@
 
 .animatebloc--one,
 .animatebloc--two,
-animatebloc--three {
+.animatebloc--three {
   animation-duration: 1s;
   animation-name: animate-fade;
   animation-fill-mode: backwards;
