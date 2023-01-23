@@ -63,8 +63,6 @@
   height: 24rem;
 }
 
-/* MAIN CONTAINER STYLING */
-
 .restaurantpage__wrapper {
   background-color: var(--color-background);
   padding: 0 1rem 3rem 1rem;
@@ -87,6 +85,7 @@
   padding: 2.5rem 0 0 0;
   background-color: var(--color-background);
   border-radius: 40px 40px 0 0;
+  letter-spacing: 0.04rem;
 }
 
 .restaurantpage__coursetitle {
@@ -206,5 +205,43 @@ animatebloc--three {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurantpage__titlecontainer {
+    margin-top: -3rem;
+    position: relative;
+    width: 75%;
+  }
+
+  .restaurantpage__title {
+    padding: 3rem;
+    justify-content: center;
+  }
+
+  .restaurantpage__wrapper {
+    width: 75%;
+    padding: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurantpage__cardwrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .restaurantpage__card {
+    width: 100%;
+    align-self: center;
   }
 }

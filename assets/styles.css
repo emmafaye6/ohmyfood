@@ -439,8 +439,9 @@ header {
 .restaurantcard__heart {
   position: relative;
   z-index: 2;
-  top: -1rem;
+  top: -0.8rem;
   background: transparent;
+  margin-left: 1rem;
 }
 
 .fa-heart {
