@@ -4,7 +4,7 @@
 }
 
 .header__arrow {
-  width: 17px;
+  width: 1.1rem;
 }
 
 .header__arrowlink {
@@ -38,8 +38,8 @@
   margin: 0;
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 41px;
+  font-size: 1.375rem;
+  line-height: 2.56rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -56,8 +56,8 @@
   padding-bottom: 0.5rem;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.19rem;
   text-transform: uppercase;
   border-bottom: 2px solid #99e2d0;
 }
@@ -75,7 +75,7 @@
   display: flex;
   width: 95%;
   background-color: var(--color-background);
-  height: 68.07px;
+  height: 4.25rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   align-items: center;
@@ -97,8 +97,8 @@
 .restaurantpage__cardtext {
   display: block;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 0.94rem;
+  line-height: 1.1rem;
   margin: 0;
   padding: 0;
   text-overflow: ellipsis;
@@ -122,7 +122,7 @@
   color: white;
   margin-top: 2rem;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-medium);
   text-decoration: none;
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
@@ -211,7 +211,7 @@
   .restaurantpage__title {
     padding: 3rem;
     justify-content: center;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .restaurantpage__wrapper {

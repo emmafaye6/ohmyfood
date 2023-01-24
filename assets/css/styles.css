@@ -68,11 +68,11 @@ ol li:before {
   top: 50%;
   transform: translateY(-50%);
   padding: 0.3rem;
-  left: -19px;
-  width: 20px;
-  height: 20px;
+  left: -1.19rem;
+  width: 1.25rem;
+  height: 1.25rem;
   background-color: #9356dc;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   color: white;
   align-items: center;
   justify-content: center;
@@ -135,7 +135,7 @@ body {
     transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    transform: scale(0.9, 1.1) translateY(-55px);
+    transform: scale(0.9, 1.1) translateY(-3.44rem);
   }
   50% {
     transform: scale(1.05, 0.95) translateY(0);
@@ -159,7 +159,7 @@ body {
     transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    transform: scale(0.9, 1.1) translateY(-55px);
+    transform: scale(0.9, 1.1) translateY(-3.44rem);
   }
   50% {
     transform: scale(1.05, 0.95) translateY(0);
@@ -204,13 +204,13 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--color-background-dark);
-  height: 50px;
+  height: 3.125rem;
   color: var(--color-footer-grey);
 }
 
 .headerlocationcontainer__icon {
-  width: 12px;
-  height: 16px;
+  width: 0.75rem;
+  height: 1rem;
   margin-right: 10px;
 }
 
@@ -224,7 +224,7 @@ header {
 
 .header__explorecontainer {
   background-color: var(--color-background);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: var(--font-bold);
   display: flex;
   align-items: center;
@@ -246,7 +246,7 @@ header {
   padding: 1.1rem 0.2rem;
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-medium);
   text-decoration: none;
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
@@ -298,8 +298,8 @@ header {
   border-radius: 20px;
   padding: 1.8rem 2.5rem;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.19rem;
 }
 
 .functioning__container:hover,
@@ -321,20 +321,20 @@ header {
 }
 
 .functioning__icon--one {
-  width: 13px;
-  height: 20px;
+  width: 0.81rem;
+  height: 1.25rem;
   margin-right: 1rem;
 }
 
 .functioning__icon--two {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   margin-right: 1rem;
 }
 
 .functioning__icon--three {
-  width: 18px;
-  height: 18px;
+  width: 1.12rem;
+  height: 1.12rem;
   margin-right: 1rem;
 }
 
@@ -358,7 +358,7 @@ header {
   position: relative;
   margin-bottom: 8%;
   height: 50%;
-  max-height: 250px;
+  max-height: 15.62rem;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   width: 80%;
@@ -379,8 +379,8 @@ header {
 
 .newbanner {
   position: absolute;
-  top: 19px;
-  right: 26px;
+  top: 1.19rem;
+  right: 1.62rem;
   padding: 0.3rem 0.5rem;
   background: #99e2d0;
   color: #008766;
@@ -399,8 +399,8 @@ header {
 .restaurantcard__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.31rem;
   margin-bottom: 0;
 }
 
@@ -414,8 +414,8 @@ header {
 .restaurantcard__text {
   margin-top: 0.5rem;
   font-weight: 300;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
 }
 
 .restaurantcard__title,
