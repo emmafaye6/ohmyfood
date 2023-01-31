@@ -171,7 +171,7 @@
 .animatebloc--one,
 .animatebloc--two,
 .animatebloc--three {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: animate-fade;
   animation-fill-mode: backwards;
 }
