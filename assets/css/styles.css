@@ -31,10 +31,6 @@
   /* FOOTER TEXT AND BG COLORS */
   --color-text-second: hsl(0, 0%, 100%);
   --color-footer-grey: hsl(0, 0%, 21%);
-
-  /* BOX SHADOW */
-  --shadow-buttonshadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  --shadow-buttonshadow-hover: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 ol {
@@ -124,34 +120,9 @@ body {
   justify-content: center;
   align-items: center;
   animation: bounce 1s ease infinite;
-  -webkit-animation: bounce 1s ease infinite;
 }
 
 @keyframes bounce {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-3.44rem);
-  }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  58% {
-    transform: scale(1, 1) translateY(-7px);
-  }
-  65% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-}
-
-@-webkit-keyframes bounce {
   0% {
     transform: scale(1, 1) translateY(0);
   }
@@ -456,12 +427,11 @@ header {
 
 .restaurantcard__heart .fa-solid {
   color: transparent;
-  transition: all 3s ease-in-out 200ms;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out 200ms;
   background-image: linear-gradient(
     to top,
     rgb(147, 86, 220),
