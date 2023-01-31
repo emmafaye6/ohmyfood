@@ -155,7 +155,7 @@
   justify-content: center;
 }
 
-.restaurantpage__check:hover {
+.restaurantpage__card:hover .restaurantpage__check {
   background-color: var(--color-mint-green);
   border-radius: 0px 15px 15px 0;
   height: 100%;
@@ -166,6 +166,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  cursor: pointer;
 }
 
 .animatebloc--one,

@@ -348,7 +348,7 @@ header {
   text-align: center;
 }
 
-.newbanner {
+.restaurantcard__newbanner {
   position: absolute;
   top: 1.19rem;
   right: 1.62rem;
@@ -426,7 +426,6 @@ header {
 }
 
 .restaurantcard__heart .fa-solid {
-  color: transparent;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
