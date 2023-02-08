@@ -212,20 +212,6 @@ header {
 }
 
 /* FUNCTIONING STYLING */
-
-.functioning {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-}
-
-.functioning ol {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 ol li {
   position: relative;
 }
@@ -248,8 +234,29 @@ ol li:before {
   justify-content: center;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 90%;
+  align-items: flex-start;
+}
+
+.functioning ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .functioning h2:first-child {
   display: flex;
+  margin-left: 0;
   align-self: flex-start;
 }
 
@@ -261,11 +268,11 @@ ol li:before {
 
 .functioning__container {
   display: flex;
-  width: 60%;
+  width: 75%;
   justify-content: flex-start;
   background-color: var(--color-background);
   margin-bottom: 2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
   border-radius: 20px;
   padding: 1.8rem 2.5rem;
   font-weight: 500;
@@ -380,6 +387,7 @@ ol li:before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 4rem;
 }
 
 .restaurantcard__text {
@@ -484,6 +492,7 @@ footer a {
 @media screen and (min-width: 1024px) {
   .functioning {
     margin: 2rem 0 2rem 0;
+    width: 90%;
   }
 
   .functioning__title {
@@ -493,19 +502,20 @@ footer a {
   .functioning ol {
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 100%;
     flex-wrap: wrap;
   }
 
   .functioning__container {
-    max-width: 20.1rem;
-    margin: 1rem 2rem;
+    max-width: 18.1rem;
+    margin: 1rem 2.5rem 1rem 0;
   }
 
   .restaurant__card {
     flex: 0 0 auto;
-    width: 30rem;
-    margin: 0 2rem 2rem 1rem;
+    width: 22%;
+    margin: 0 1rem 2rem 1rem;
   }
 
   .restaurantcard__heart {
@@ -519,9 +529,10 @@ footer a {
   .restaurantcard__wrapper {
     display: flex;
     flex-wrap: nowrap;
-    overflow: auto;
+    overflow: hidden;
     flex-direction: row;
     padding-bottom: 1rem;
+    justify-content: center;
   }
 
   footer {
@@ -537,7 +548,7 @@ footer a {
 
   .footer__icon {
     width: 10%;
-    margin: 0 1rem 0 1rem;
+    margin: 0 0.5rem 0 1rem;
   }
 
   .footer__container {
@@ -554,10 +565,14 @@ footer a {
     flex-wrap: nowrap;
   }
 
+  .footer__texticonwrapper a {
+    white-space: nowrap;
+  }
+
   .footer__icon--smallone {
-    width: 7%;
+    width: 1rem;
   }
   .footer__icon--smalltwo {
-    width: 9%;
+    width: 1.1rem;
   }
 }
