@@ -83,7 +83,7 @@ body {
 /* PRELOADER STYLING */
 
 .loadingscreen {
-  animation: loader 1s 4s forwards;
+  animation: loader 1s 3s forwards;
   transform-origin: bottom;
   position: fixed;
   opacity: 1;
